@@ -49,10 +49,10 @@ pipeline {
             ls -la
             
             if [ -f zap-report.html ]; then
-                echo "✅ Report found!"
+                echo "Report found!"
                 cat zap-report.html | head -20
             else
-                echo "❌ Report NOT found!"
+                echo "Report NOT found!"
             fi
         '''
         
